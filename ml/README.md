@@ -11,7 +11,7 @@
 - Run `pip install -r requirements.txt` command to install all dependencies
 
 ### Download model(s)
-- Run the `get_model.py` script in the root directory usin `python get_model.py model <specify-models>`
+- Run the `get_model.py` script in the root directory using `python get_model.py model <specify-models>`
 - Replace `<specify-models>` using the following codes:
   - `all` to download all available models
   - `kidney` to download the Kidney Cancer Classification model

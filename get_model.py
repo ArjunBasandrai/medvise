@@ -1,7 +1,6 @@
-import os
-import requests
 import sys
 import json
+import subprocess
 
 try:
     args = sys.argv[1:]
@@ -23,20 +22,20 @@ for i in args[1:]:
                 links.append(link)
             else:
                 raise ValueError(f"Invalid Argument: {link}")
-    
-save_dir = "ml/models/"
-for i,key in enumerate(links):
-    link = models[key]
-    model = link.split("/")[-1]
-    file_name = os.path.join(save_dir, model)
 
-    print(f"Fetching {model} {i+1}/{len(links)}")
-    response = requests.get(link)
-    
-    if response.status_code == 200:
-        with open(file_name, "wb") as file:
-            print(f"Downloading {model} {i+1}/{len(links)}")
-            file.write(response.content)
-        print(f"Downloaded model file to {file_name}")
-    else:
-        print(f"Failed to download model. Status code: {response.status_code}")
+for i,link in enumerate(links):
+    src = models[link]
+    command = f"kaggle kernels output {src} -p ml/models/"
+    print(f"Downloading {i+1}/{len(links)}")
+    print(command)
+    try:
+        result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+
+        if result.returncode == 0:
+            print("Command executed successfully:")
+            print(result.stdout)
+        else:
+            print("Command failed with error:")
+            print(result.stderr)
+    except Exception as e:
+        print("An error occurred:", str(e))

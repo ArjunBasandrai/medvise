@@ -1,2 +1,3 @@
-# model files
+# model files / logs
 *.h5
+*.log

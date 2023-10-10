@@ -1,10 +1,3 @@
-## Training Script
-
-The training scripts in this repository were initially developed on Kaggle. The links to which can be found below :-
-
-- <a href="https://www.kaggle.com/code/arjunbasandrai/kidney-cancer-classification-99-5" target="_blank">Kidney Cancer Classification</a>
-- <a href="https://www.kaggle.com/code/arjunbasandrai/cervical-cancer-classification-99-15" target="_blank">Cervical Cancer Classification</a>
-
 ## Instructions to download the models
 
 ### Setup Kaggle API
@@ -23,6 +16,13 @@ The training scripts in this repository were initially developed on Kaggle. The 
   - `all` to download all available models
   - `kidney` to download the Kidney Cancer Classification model
   - `cervix` to download the Cervix Cancer Classification model
+
+## Training Script
+
+The training scripts in this repository were initially developed on Kaggle. The links to which can be found below :-
+
+- <a href="https://www.kaggle.com/code/arjunbasandrai/kidney-cancer-classification-99-5" target="_blank">Kidney Cancer Classification</a>
+- <a href="https://www.kaggle.com/code/arjunbasandrai/cervical-cancer-classification-99-15" target="_blank">Cervical Cancer Classification</a>
 
 **NOTE**: Models will be downloaded in the `ml/models/` directory
 

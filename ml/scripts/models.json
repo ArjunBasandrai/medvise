@@ -1,6 +1,6 @@
 { 
     "kidney" : "arjunbasandrai/kidney-cancer-classification-99-5",
     "cervix" : "arjunbasandrai/cervical-cancer-classification-99-15",
-    "alzheimer" : "madbonze/alzheimer-detection-mri"
-
+    "alzheimer" : "madbonze/alzheimer-detection-mri",
+    "monkeypox" : "madbonze/monkeypox-classification"
 }

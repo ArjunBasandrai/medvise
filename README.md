@@ -1,7 +1,7 @@
 <h1 align="center"> MEDVISE </h1>
 
 > <Subtitle>
-> A website that provides comprehensive information to help you understand medical scans. It covers scans like CT Scans, X-Rays, MRI to identify diseases such as Covid-19, Tuberculosis, Brain Tumor and Cancer.
+> A website that provides comprehensive information to help you understand medical scans like CT Scans, X-Rays, MRI to identify diseases such as Covid-19, Tuberculosis, Brain Tumor and Cancer.
 
 ## Features
 - Covers various types of Medical Scans

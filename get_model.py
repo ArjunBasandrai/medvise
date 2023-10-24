@@ -1,17 +1,23 @@
+import os
 import sys
 import json
 import subprocess
 
+# Check command arguments
 try:
     args = sys.argv[1:]
-    if (args[0] != "model"):
-        raise ValueError(f"Invalid argument: {args[0]}")
 except:
     raise ValueError("No model argument found")
+if (args[0] != "model"):
+    raise ValueError(f"Invalid argument: {args[0]}")
+elif len(args) == 1:
+    raise ValueError("No model name provided")
+    
 
 with open("ml/scripts/models.json", "r") as f:
     models = json.loads(f.read())
 
+# Select models
 for i in args[1:]:
     if i == "all":
         links = list(models.keys())
@@ -23,6 +29,7 @@ for i in args[1:]:
             else:
                 raise ValueError(f"Invalid Argument: {link}")
 
+# Download selected models
 for i,link in enumerate(links):
     src = models[link]
     command = f"kaggle kernels output {src} -p ml/models/"
@@ -39,3 +46,11 @@ for i,link in enumerate(links):
             print(result.stderr)
     except Exception as e:
         print("An error occurred:", str(e))
+
+# Remove .log files
+dir_name = "ml/models/"
+files = os.listdir(dir_name)
+
+for f in files:
+    if f.endswith(".log"):
+        os.remove(os.path.join(dir_name,f))

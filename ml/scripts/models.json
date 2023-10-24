@@ -3,6 +3,7 @@
     "cervix" : "arjunbasandrai/cervical-cancer-classification-99-15",
     "alzheimer" : "madbonze/alzheimer-detection-mri",
     "monkeypox" : "madbonze/monkeypox-classification",
-    "tubercolosis" : "madbonze/tubercolosis-classification-x-ray",
-    "covid_x_ray" : "madbonze/covid-classification-x-ray"
+    "tuberculosis" : "madbonze/tubercolosis-classification-x-ray",
+    "covid_x_ray" : "madbonze/covid-classification-x-ray",
+    "covid_ct_scan" : "madbonze/covid-ct-scan-classification"
 }

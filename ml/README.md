@@ -18,8 +18,9 @@
   - `cervix` to download the Cervix Cancer Classification model
   - `alzheimer` to download the Alzheimer Classification model
   - `monkeypox` to download the Monkeypox Classfication model
-  - `tubercolosis` to download Tubercolosis Classification model
+  - `tuberculosis` to download Tuberculosis Classification model
   - `covid_x_ray` to download Covid X Ray Classification model
+  - `covid_ct_scan` to download Covid CT Scan Classification model
 
 
 ## Training Script
@@ -30,8 +31,9 @@ The training scripts in this repository were initially developed on Kaggle. The 
 - <a href="https://www.kaggle.com/code/arjunbasandrai/cervical-cancer-classification-99-15" target="_blank">Cervical Cancer Classification</a>
 - <a href="https://www.kaggle.com/code/madbonze/alzheimer-detection-mri" target="_blank">Alzheimer Classification</a>
 - <a href="https://www.kaggle.com/code/madbonze/monkeypox-classification" target="_blank">Monkeypox Classification</a>
-- <a href="https://www.kaggle.com/code/madbonze/tubercolosis-classification-x-ray" target="blank">Tubercolosis Classification</a>
+- <a href="https://www.kaggle.com/code/madbonze/tubercolosis-classification-x-ray" target="blank">Tuberculosis Classification</a>
 - <a href = "https://www.kaggle.com/code/madbonze/covid-classification-x-ray" target="blank">Covid X Ray Classification</a>
+- <a href = "https://www.kaggle.com/code/madbonze/covid-ct-scan-classification" target="blank">Covid CT Scan Classification</a>
 
 
 **NOTE**: Models will be downloaded in the `ml/models/` directory

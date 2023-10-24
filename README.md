@@ -1,7 +1,7 @@
-# MEDVISE
+<h1 align="center"> MEDVISE </h1>
 
 > <Subtitle>
-> A website that addresses all your needs to reading Medical Scans. It covers scans like CT Scans, X-Rays, MRI to identify diseases such as Covid-19, Tuberculosis, Brain Tumor and Cancer.
+> A website that addresses all your needs to understand Medical Scans. It covers scans like CT Scans, X-Rays, MRI to identify diseases such as Covid-19, Tuberculosis, Brain Tumor and Cancer.
 
 ## Features
 - Covers various types of Medical Scans
@@ -11,7 +11,7 @@
 
 ## Contributors
 
-<table align-"center">
+<table align="center">
 	<tr align="center" style="font-weight:bold">
 		<td>
 		Arjun Basandrai
